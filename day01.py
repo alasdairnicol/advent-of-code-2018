@@ -14,6 +14,8 @@ def find_repeated_frequencies(frequency_changes: list[int]) -> int:
         if current_frequency in seen_frequences:
             return current_frequency
         seen_frequences.add(current_frequency)
+    raise ValueError("No repeated frequencies found")
+
 
 
 def main():
