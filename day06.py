@@ -10,8 +10,6 @@ def do_part_1(pairs: list[tuple[int, int]]) -> int:
     max_x = max(x for x, y in pairs)
     max_y = max(y for x, y in pairs)
 
-    print(max_x, max_y)
-
     areas: defaultdict[tuple[int, int], int] = defaultdict(int)
     infinite_areas = set()
 
